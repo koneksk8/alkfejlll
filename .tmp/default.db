@@ -1,0 +1,209 @@
+{
+  "data": {
+    "error": [
+      {
+        "status": "new",
+        "location": "sadasd",
+        "description": "dsasd",
+        "date": "2015-10-30T22:41:04.530Z",
+        "createdAt": "2015-10-30T22:41:04.532Z",
+        "updatedAt": "2015-10-30T22:41:04.532Z",
+        "id": 7
+      },
+      {
+        "status": "new",
+        "location": "A",
+        "description": "asa",
+        "date": "2015-11-11T00:08:25.391Z",
+        "createdAt": "2015-11-11T00:08:25.394Z",
+        "updatedAt": "2015-11-11T00:08:25.394Z",
+        "id": 8
+      },
+      {
+        "status": "new",
+        "location": "B",
+        "description": "cucc",
+        "date": "2015-11-11T00:48:34.630Z",
+        "createdAt": "2015-11-11T00:48:34.631Z",
+        "updatedAt": "2015-11-11T00:48:34.631Z",
+        "id": 10
+      },
+      {
+        "status": "new",
+        "location": "aa",
+        "description": "a",
+        "date": "2015-11-12T01:45:19.195Z",
+        "createdAt": "2015-11-12T01:45:19.198Z",
+        "updatedAt": "2015-11-12T01:45:19.198Z",
+        "id": 12
+      },
+      {
+        "status": "new",
+        "location": "spongyabob",
+        "description": "ab",
+        "date": "2015-12-09T19:28:34.000Z",
+        "createdAt": "2015-11-12T01:49:14.837Z",
+        "updatedAt": "2015-12-09T19:28:35.029Z",
+        "id": 13
+      },
+      {
+        "status": "new",
+        "location": "b54",
+        "description": "piros labda",
+        "date": "2015-11-26T09:58:36.360Z",
+        "createdAt": "2015-11-26T09:58:36.362Z",
+        "updatedAt": "2015-11-26T09:58:36.362Z",
+        "id": 15
+      },
+      {
+        "status": "new",
+        "location": "kék szektor",
+        "description": "leiras",
+        "date": "2015-12-09T17:22:39.718Z",
+        "createdAt": "2015-12-09T17:22:39.720Z",
+        "updatedAt": "2015-12-09T19:21:15.200Z",
+        "id": 16
+      }
+    ],
+    "user": [
+      {
+        "surname": "Kiss",
+        "forename": "Ferenc",
+        "neptun": "asd123",
+        "password": "$2a$10$/TGf/ZArvBfo3sXPh0YVn.py/w6j1njImKnMCi4jyWuNi3ZUmpCGi",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-10-14T21:47:48.208Z",
+        "updatedAt": "2015-10-14T21:47:48.208Z",
+        "id": 1
+      },
+      {
+        "surname": "Kis",
+        "forename": "Elek",
+        "neptun": "abcd12",
+        "password": "abcd123",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-10-15T07:02:41.481Z",
+        "updatedAt": "2015-10-15T07:02:41.481Z",
+        "id": 2
+      },
+      {
+        "surname": "abcd12",
+        "forename": "abcd12",
+        "neptun": "abcd123",
+        "password": "$2a$10$M3kw2vSNxsZwnc4xUVcvHeiDJSsonu1KZJvIJE53kYhC294sxrnj6",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-10-15T07:20:15.875Z",
+        "updatedAt": "2015-10-15T07:20:15.875Z",
+        "id": 3
+      },
+      {
+        "surname": "Adolf",
+        "forename": "Adam",
+        "neptun": "iux21n",
+        "password": "$2a$10$viEeNja0tFvBCMIPqQly7ebBC9tmxh9bAboBCV45gm45dew0nF8TO",
+        "avatar": "http://www.wohax.com/forum/image.php?u=17847&dateline=1396217463",
+        "role": "riporter",
+        "createdAt": "2015-10-30T22:24:19.499Z",
+        "updatedAt": "2015-10-30T22:24:19.499Z",
+        "id": 4
+      },
+      {
+        "surname": "adam",
+        "forename": "adam",
+        "neptun": "admin",
+        "password": "$2a$10$Q786dCm09kWcYKJbtW7ZNuaUlLmbtUGFfmr1KQWVSsyETHuClbaYS",
+        "avatar": "",
+        "role": "riporter",
+        "createdAt": "2015-11-05T19:47:09.864Z",
+        "updatedAt": "2015-11-05T19:47:09.864Z",
+        "id": 5
+      }
+    ]
+  },
+  "schema": {
+    "error": {
+      "date": {
+        "type": "datetime"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "new"
+        ]
+      },
+      "location": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "user": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "neptun": {
+        "type": "string",
+        "unique": true
+      },
+      "password": {
+        "type": "string"
+      },
+      "surname": {
+        "type": "string"
+      },
+      "forename": {
+        "type": "string"
+      },
+      "avatar": {
+        "type": "string"
+      },
+      "role": {
+        "type": "string",
+        "enum": [
+          "riporter",
+          "operator"
+        ],
+        "defaultsTo": "riporter"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "error": {
+      "id": 16
+    },
+    "user": {
+      "id": 5
+    }
+  }
+}
