@@ -21,4 +21,20 @@ This chat example showcases how to use `socket.io` with a static `express` serve
 
 Once the server is running, open the project in the shape of 'https://projectname-username.c9.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
 
-Dokumentáció:
+about:
+
+the program is made for a course, requirements were:
+
+-at least two model in 1->n relation
+-at least one page for user to fill
+-opportunity for user to create object
+-edit object
+-delete object
+-page available only after authentication
+-data persisting to file
+
+user usecases:
+
+[clickable!](readme/esetdiagram.png)
+
+
