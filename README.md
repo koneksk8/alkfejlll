@@ -48,7 +48,7 @@ default pc requirements for using c9.io
 
 softwares used for developing:
 c9.io
-windows 7
+windows 7 
 
 minimal software requirements for running the app:
 -pentium 4
