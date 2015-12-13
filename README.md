@@ -38,7 +38,9 @@ the program is made for a course,
 
 ##non functional:
 -scalable
+
 -security
+
 -good performance
 
 ##user usecases:
@@ -106,14 +108,23 @@ packages used:
 
 ##endpoints:
 *GET /: index page
+
 *GET /login: login page
+
 *POST /login: send login fields
+
 *GET /errors/list: itemlist
+
 *GET /errors/new: add new item
+
 *POST /errors/new: send new item data
+
 *GET /errors/:id: hiba adatai
+
 *GET /errors/edit/:id go edit item page
+
 *POST /errors/edit/:id send edited item details
+
 
 
 
