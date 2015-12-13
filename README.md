@@ -28,12 +28,19 @@ the program is made for a course,
 ##functional requirements were:
 
 -at least two model in 1->n relation
+
 -at least one page for user to fill
+
 -opportunity for user to create object
+
 -edit object
+
 -delete object
+
 -page available only after authentication
+
 -data persisting to file
+
 
 
 ##non functional:
@@ -50,54 +57,89 @@ the program is made for a course,
 ##details
 Upon entering the website the user find himself on the index page, he is able to register a new user there.
 After logging in they find themselves on the warehouse list page where: 
+
 -they can add entitys to the warehouse, they can give it a location and a description.
+
 -they can edit existing items, and delete them.
+
 -and finally log out
 
+
 ##hardware stats for developing:
+
 default pc requirements for using c9.io
 
 ##softwares used for developing:
+
 c9.io
+
 windows 7 
 
 ##minimal software requirements for running the app:
+
 -pentium 4
+
 -1 GB ram
+
 -gfx card capable of 1024*768 resolution
 
+
 ##additional requirements:
-interactive user interface,easy handling
+-interactive user interface
+
+-easy to handle
 
 ##database plan:
 ![clickable](readme/structure.png)
 
 ##softwares to run:
 -any OS
+
 -nodeJS
+
 -install packages
-  -npm install <package name>  command
+
+-npm install <package name>  command
+
 
 packages used:
+
 -bcryptjs 2.3.0
+
 -body-parser 1.14.1
+
 -chai 3.3.0
+
 -connect-flash 0.1.1
+
 -express 4.13.3
+
 -express-session 1.11.3
+
 -express-validator 2.17.1
+
 -hbs 3.1.1
+
 -passport 0.3.0
+
 -passport-local 1.0.0
+
 -sails-disk 0.10.8
+
 -sails-memory 0.10.5
+
 -mocha 2.3.3
+
 -zombie 4.1.0
+
 -waterline 0.10.26
 
+
 ##TEST:
-*test.js
-*models/user.test.js
+
+-test.js
+
+-models/user.test.js
 
 ##ui sketch:
 
@@ -107,23 +149,23 @@ packages used:
 ![clickable](readme/flowchart.png)
 
 ##endpoints:
-*GET /: index page
+-GET /: index page
 
-*GET /login: login page
+-GET /login: login page
 
-*POST /login: send login fields
+-POST /login: send login fields
 
-*GET /errors/list: itemlist
+-GET /errors/list: itemlist
 
-*GET /errors/new: add new item
+-GET /errors/new: add new item
 
-*POST /errors/new: send new item data
+-POST /errors/new: send new item data
 
-*GET /errors/:id: hiba adatai
+-GET /errors/:id: hiba adatai
 
-*GET /errors/edit/:id go edit item page
+-GET /errors/edit/:id go edit item page
 
-*POST /errors/edit/:id send edited item details
+-POST /errors/edit/:id send edited item details
 
 
 
