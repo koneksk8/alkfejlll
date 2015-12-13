@@ -35,7 +35,7 @@ the program is made for a course, requirements were:
 
 user usecases:
 
-[clickable!](readme/esetdiagram.png)
+![usecase](readme/esetdiagram.png)
 
 Upon entering the website the user find himself on the index page, he is able to register a new user there.
 After logging in they find themselves on the warehouse list page where: 
@@ -58,7 +58,11 @@ minimal software requirements for running the app:
 additional requirements:
 interactive user interface,easy handling
 
+database plan:
+![clickable](readme/structure.png)
+
 to run:
+-any OS
 -nodeJS
 -install packages
   -npm install <package name>  command
@@ -83,5 +87,10 @@ packages used:
 TEST:
 -test.js
 -models/user.test.js
+
+ui sketch:
+
+![clickable](readme/look.png)
+
 
 
