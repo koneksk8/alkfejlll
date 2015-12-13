@@ -23,7 +23,9 @@ Once the server is running, open the project in the shape of 'https://projectnam
 
 about:
 Simulates a warehouse where you can enter as an employee, and manage the items in the warehouse.
-the program is made for a course, requirements were:
+the program is made for a course, 
+
+functional requirements were:
 
 -at least two model in 1->n relation
 -at least one page for user to fill
@@ -32,6 +34,12 @@ the program is made for a course, requirements were:
 -delete object
 -page available only after authentication
 -data persisting to file
+
+
+non functional:
+-scalable
+-security
+-good performance
 
 user usecases:
 
@@ -91,6 +99,23 @@ TEST:
 ui sketch:
 
 ![clickable](readme/look.png)
+
+flowchart:
+![clickable](readme/flowchart.png)
+
+endpoints:
+GET /: index page
+GET /login: login page
+POST /login: send login fields
+GET /errors/list: itemlist
+GET /errors/new: add new item
+POST /errors/new: send new item data
+GET /errors/:id: hiba adatai
+GET /errors/edit/:id go edit item page
+POST /errors/edit/:id send edited item details
+
+
+
 
 
 
