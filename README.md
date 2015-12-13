@@ -62,6 +62,7 @@ database plan:
 ![clickable](readme/structure.png)
 
 to run:
+-any OS
 -nodeJS
 -install packages
   -npm install <package name>  command
@@ -86,5 +87,10 @@ packages used:
 TEST:
 -test.js
 -models/user.test.js
+
+ui sketch:
+
+![clickable](readme/look.png)
+
 
 
