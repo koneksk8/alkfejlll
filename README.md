@@ -21,11 +21,11 @@ This chat example showcases how to use `socket.io` with a static `express` serve
 
 Once the server is running, open the project in the shape of 'https://projectname-username.c9.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
 
-about:
+##about:
 Simulates a warehouse where you can enter as an employee, and manage the items in the warehouse.
 the program is made for a course, 
 
-functional requirements were:
+##functional requirements were:
 
 -at least two model in 1->n relation
 -at least one page for user to fill
@@ -36,40 +36,41 @@ functional requirements were:
 -data persisting to file
 
 
-non functional:
+##non functional:
 -scalable
 -security
 -good performance
 
-user usecases:
+##user usecases:
 
 ![usecase](readme/esetdiagram.png)
 
+##details
 Upon entering the website the user find himself on the index page, he is able to register a new user there.
 After logging in they find themselves on the warehouse list page where: 
 -they can add entitys to the warehouse, they can give it a location and a description.
 -they can edit existing items, and delete them.
 -and finally log out
 
-hardware stats for developing:
+##hardware stats for developing:
 default pc requirements for using c9.io
 
-softwares used for developing:
+##softwares used for developing:
 c9.io
 windows 7 
 
-minimal software requirements for running the app:
+##minimal software requirements for running the app:
 -pentium 4
 -1 GB ram
 -gfx card capable of 1024*768 resolution
 
-additional requirements:
+##additional requirements:
 interactive user interface,easy handling
 
-database plan:
+##database plan:
 ![clickable](readme/structure.png)
 
-to run:
+##softwares to run:
 -any OS
 -nodeJS
 -install packages
@@ -92,27 +93,27 @@ packages used:
 -zombie 4.1.0
 -waterline 0.10.26
 
-TEST:
--test.js
--models/user.test.js
+##TEST:
+*test.js
+*models/user.test.js
 
-ui sketch:
+##ui sketch:
 
 ![clickable](readme/look.png)
 
-flowchart:
+##flowchart:
 ![clickable](readme/flowchart.png)
 
-endpoints:
-GET /: index page
-GET /login: login page
-POST /login: send login fields
-GET /errors/list: itemlist
-GET /errors/new: add new item
-POST /errors/new: send new item data
-GET /errors/:id: hiba adatai
-GET /errors/edit/:id go edit item page
-POST /errors/edit/:id send edited item details
+##endpoints:
+*GET /: index page
+*GET /login: login page
+*POST /login: send login fields
+*GET /errors/list: itemlist
+*GET /errors/new: add new item
+*POST /errors/new: send new item data
+*GET /errors/:id: hiba adatai
+*GET /errors/edit/:id go edit item page
+*POST /errors/edit/:id send edited item details
 
 
 
